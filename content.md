@@ -126,3 +126,20 @@ Careers
 Recipe directory
 Help center
 Privacy & terms
+
+######
+
+## Section
+
+-navigation -- single page this is but we can still have links to sections of thepage that would make it easier for the user to land there rather than scroll through the entire thing
+
+- hero
+- featured publicsatons.. basically where the application has been featured .. hsa been moved up because this is where it is usually on pages .. the coursera thing also has this .. right under the hero is the different companies that uses coursera
+- how it works
+- diet
+- meals (will put the different diet preferences here as tht is not that much of a section on its own )
+- gallery
+- testimonials
+- pricing .. pricing is kept below .. featuers comes in here rather than being on its own
+- call to action -- free sample section .. user fills out the form and then voila
+- footer(contact details ?? maybe)
