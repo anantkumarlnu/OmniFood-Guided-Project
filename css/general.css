@@ -79,7 +79,8 @@ body {
 .container {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 0 3.2rem;
+  /* following padding so that on smaller screens the content dont stick on the sides of the viewport */
+  padding: 0 3.2rem; 
 }
 
 .grid {
