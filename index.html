@@ -379,7 +379,45 @@
 <section class="section-cta">
   <div class="container">
     <div class="cta">
-      <div class="cta-text-box">cta</div>
+      <div class="cta-text-box">
+        <!-- the heading that was provided with the material  -->
+        <h2 class="heading-secondary">Your first meal is on us!</h2>
+      
+        <!-- content that was given -->
+        <p class="cta-text">
+          Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime.
+          And the first meal is on us!
+        </p>
+      
+        <!-- now the form hisself  -->
+        <form class="cta-form" action="#">
+      
+          <div>
+            <label for="full-name">Full Name</label>
+            <input id="full-name" type="text" placeholder="John Smith" required>
+          </div>
+      
+          <div>
+            <label for="email">Email address</label>
+            <input id="email" type="email" placeholder="me@example.com" required>
+          </div>
+      
+          <div>
+            <label for="hear">Where did you hear about us?</label>
+            <select name="" id="hear" required>
+              <option value="">Please choose one option: </option>
+              <option value="friendsandfamily">Friends and Family</option>
+              <option value="youtube">YouTube video</option>
+              <option value="podcast">Podcast</option>
+              <option value="facebook">Facebook</option>
+              <option value="ad">Advertisement</option>
+              <option value="others">Others</option>
+            </select>
+          </div>
+      
+          <button class="btn btn--form">Sign up now </button>
+        </form>
+      </div>
       <div class="cta-img-box" role="img" aria-label="woman enjying food!"></div>
     </div>
   </div>
