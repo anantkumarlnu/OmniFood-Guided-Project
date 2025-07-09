@@ -31,6 +31,8 @@ SPACING SYSTEM (px):
 - SHADES
 - ACCENTS -- #45260a
 - GREYS 
+#888
+#767676 lightest allowed on white
 #6f6f6f -- lowest grey allowed on fdf2e9
 #555
 #333
@@ -108,6 +110,9 @@ do the following or add the margin to all and then remove it if it is the last c
 }
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--center-v {
