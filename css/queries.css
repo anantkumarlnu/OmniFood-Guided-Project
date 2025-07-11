@@ -1,0 +1,43 @@
+/* rem and em do not depend on html fontsizxe for media queries... like they do for the regular css that we wrote  in the general file
+
+instead, 1rem = 1em = 16px 
+
+always do em for media queries as rem might have some issues with legacy browsers .. and we cant assume that the visitor is on the latest version of the most common browser
+
+*/
+
+/* FIRST BREAKPOINT - 1350px .. that in em would be 
+1350/16 = 84.3 ~ 84em
+
+84*16 = 1344px .. so the following styling will apply when the width is 1344px or below (this for small computers )
+*/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* SECOND BREAKPOINT 
+
+1200/16 = 75 em
+
+following styles will be applied when the width of device is 1200 or less .. for tablet landscape mode 
+*/
+
+/* FONT SIZE SYSTEM (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+    
+
+SPACING SYSTEM (px):
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
