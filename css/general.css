@@ -66,6 +66,11 @@ medium 11px
 }
 
 html {
+  /* the default font size is 16px .. whwn we use rem .. the rem value will be multiplied by 16 .. the calculation will be too much so we want to change the default of 16 to 10 
+  
+  we can do that but it wont respond to the users font setting .. to respons to that we take a percentage .. so that everything can scale based on users preference .. so 10 is 62.5% of 16 .. so if the user has 30px as their fdevice font size .. our page will use 62.5% of that and everything will be scaled accordingly .. we are still respecting the values set by the user and not forcing them to view the webapge through a fixed fontsize 
+  
+  */
   /* font-size: 10px; */
   font-size: 62.5%;
 }
