@@ -15,6 +15,7 @@ line heights :
 small - 1.05
 medium - 1.2
 paragraph defult- 1.6
+large 1.8
 
 letter spacing 
 -0.5px
@@ -246,6 +247,7 @@ gap: 1.6rem;
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon{

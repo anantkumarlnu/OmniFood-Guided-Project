@@ -72,6 +72,74 @@ following styles will be applied when the width of device is 1200 or less .. for
 
 }
 
+/* THIRD BREAKPOINT 
+
+940/16 = 58.75 em
+944/16 = 59EM
+following styles will be applied when the width of device is 940 or less .. for tablet mode 
+*/
+
+@media(max-width:59em){
+
+  html{
+    font-size:50%;
+  }
+  .hero{
+    grid-template-columns: 1fr;
+      padding: 0 8rem;
+gap: 6.4rem;
+  }
+  .hero-img{
+  width: 60%;
+}
+
+.hero-text-box,
+.hero-image-box{
+  text-align: center;
+}
+
+.delivered-meals{
+  justify-content: center;
+  margin-top: 3.2rem;
+}
+
+.logos img{
+  height: 2.4rem;
+}
+
+.step-number{
+  font-size: 7.4rem;
+}
+
+.meal-content{
+  padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+}
+
+.section-testimonials{
+    grid-template-columns: 1fr;
+}
+
+.gallery{
+  grid-template-columns: repeat(6,1fr);
+}   
+
+.cta{
+  /* 3 fr would mean 3/5 which is 60% and the rest would then be 40%
+  so we increased the size of the image by increasing the sixze of the container that has the iamge 
+
+  */
+  grid-template-columns: 3fr 2fr;
+}
+
+.cta-form{
+  grid-template-columns: 1fr;
+}
+
+.btn--form{
+  margin-top: 1.2rem;
+}
+}
+
 
 
 /* FONT SIZE SYSTEM (px):
