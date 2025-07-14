@@ -211,7 +211,7 @@ following styles will be applied when the width of device is 704 or less .. for 
   }
 
   .diets {
-    grid-column: 1 / 3;
+    grid-column: 1 / -1;
     justify-self: center;
   }
 
@@ -222,30 +222,16 @@ following styles will be applied when the width of device is 704 or less .. for 
   .pricing-plan {
     width: 100%;
   }
-  .pricing-plan--complete::after {
-    position: absolute;
-    content: "Best Value";
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    font-weight: 700;
-    top: 6%;
-    right: -12%;
-    background-color: #ffd43b;
-    padding: 0.8rem 4.8rem;
-    color: #333;
-    transform: rotate(45deg);
-  }
 
   .grid--footer {
     grid-template-columns: repeat(6, 1fr);
   }
 
-  .logo-col {
-    grid-column: span 3;
-  }
+  .logo-col,
   .address-col {
     grid-column: span 3;
   }
+
   .nav-col {
     grid-row: 1;
     grid-column: span 2;
@@ -259,7 +245,7 @@ following styles will be applied when the width of device is 704 or less .. for 
 following styles will be applied when the width of device is 544 or less .. for MOBILE PHONES  
 */
 
-@media (max-width: 44em) {
+@media (max-width: 34em) {
   .grid {
     row-gap: 4.8rem;
   }
