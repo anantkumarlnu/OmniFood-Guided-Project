@@ -59,6 +59,43 @@ allLinks.forEach(function (link) {
 
 
 ///////////////////////////////////////////////////////////
+// sticky nav bar
+
+const sectionHeroEl = document.querySelector(".section-hero");
+const obs = new IntersectionObserver(function(entries) {
+
+  const ent = entries[0];
+  console.log(ent);
+  // isIntersecting basically checks if the entry on which it is being checked is in the viewport of not .. if it has 0 value it means that the element that the observer is observing is not in the viewport 
+  if(ent.isIntersecting === false){
+    // adding the cticky header as the hero is not on the viewport
+    document.body.classList.add("sticky");
+  }else{
+    // adding back the sticky header as hero is in some copacity on the viewport 
+        document.body.classList.remove("sticky");
+  }
+},
+
+{
+// first we define the root .. this is where the element should exist .. or not exist ... to observe it within the viewport we set it to null
+root:null,
+
+// next the percentage of the selected element is within the viewport .. we want the sticky to work when there is 0% of hero left on the viewport so we set the threshold to 0... 0 is completly outside and 1 is completely inside 
+
+threshold:0,
+
+// we want the sticky header to appear just as the hero is about to runout .. currently it appears only after the entire hero is gone from the header .. we use some root margin so that the sticky header appears just as the hero is about to run out .. rem and percentages dont work for this prop.. 80px comes from the 8rem height that we gave to the sticky header 
+
+
+rootMargin:'-80px',
+
+
+
+})
+obs.observe(sectionHeroEl);
+
+
+///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
   var flex = document.createElement("div");
