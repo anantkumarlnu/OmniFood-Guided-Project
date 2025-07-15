@@ -139,6 +139,7 @@ following styles will be applied when the width of device is 940 or less .. for 
   /* mobile nav starts at this breakpoint  */
   .btn-mobile-nav {
     display: block;
+    z-index: 1000;
   }
 
   .main-nav {

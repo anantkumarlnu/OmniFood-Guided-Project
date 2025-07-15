@@ -1,8 +1,18 @@
 console.log("hello wurld");
 
+// settin g the. current year in the footer copyright text
 const yearEl = document.querySelector(".year");
 yearEl.textContent = new Date().getFullYear();
 
+
+// making the mobile nav work by adding and removing nav-open class to the header when the hamburger icon is clicked
+
+const btnMobNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+
+btnMobNavEl.addEventListener('click', function() {
+  headerEl.classList.toggle("nav-open");
+})
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
@@ -21,7 +31,7 @@ function checkFlexGap() {
 
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
-checkFlexGap();
+checkFlexGap(); 
 
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 
