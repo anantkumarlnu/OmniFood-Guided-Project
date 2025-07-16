@@ -143,7 +143,7 @@ following styles will be applied when the width of device is 940 or less .. for 
   }
 
   .main-nav {
-    background-color: rgba(255, 255, 255, 0.934);
+    background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
     top: 0;
     left: 0;
@@ -164,6 +164,11 @@ following styles will be applied when the width of device is 940 or less .. for 
     /* hide it from the screen readers  */
     visibility: hidden;
     overflow-x: hidden;
+
+    /* prefix test */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
   }
 
   .nav-open .main-nav {
@@ -315,3 +320,56 @@ SPACING SYSTEM (px):
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 */
+
+
+/* safari gap fix code  start*/
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}
+/* safari gap fix code  end*/
